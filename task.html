@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2ca44d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            width: 100%;
+            position: relative;
+            min-height: calc(100vh - 100px);
+        }
+
+        .card {
+            background-color: white;
+            padding: 50px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 550px;
+            height: 120px; 
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card h2 {
+            color: #2ca44d;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        
+        .about-css {
+            top: 100px;
+            left: 20px;
+        }
+
+        .box-model {
+            top: 100px;
+            right: 20px;
+        }
+
+        .responsive-design {
+            bottom: 140px;
+            left: 20px;
+        }
+
+
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #2ca44d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Website Task</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card about-css">
+            <h2>About CSS</h2>
+            <p>Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing, and more.</p>
+        </div>
+        <div class="card box-model">
+            <h2>Box Model</h2>
+            <p>The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding, and the actual content.</p>
+        </div>
+        <div class="card responsive-design">
+            <h2>Responsive Design</h2>
+            <p>Responsive design ensures your webpage looks great on all devices, from desktops to mobile phones.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by [Arnav Singh] | Follow us on 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>

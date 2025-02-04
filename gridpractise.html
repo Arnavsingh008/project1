@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            border: 5px black solid;
+            background-color: lightblue;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 200px 300px;
+
+        }
+        .item{
+            border: 2px blue solid;
+            padding: 10px;
+
+        }
+        #i1{
+            /* grid-row-start: 1;
+            grid-row-end: span  ; */
+            grid-column-start: 1;
+            grid-column-end: span1 ;
+            
+        }
+        #i2{
+            grid-column-start: 1;
+            grid-column-end: span1;
+            grid-row-start: 2;
+            grid-row-end: span;
+        }
+        #i3{
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+        #i4{
+            grid-column-start: 3;
+            grid-column-end: span 2;
+        }
+        #i5{
+            grid-column-start: 1 ;
+            grid-column-end: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1"><h1>FamousDishesofIndia</h1></div>
+        <div class="item" id="i2">Pani-puri
+            <img src="panipuri.jfif" alt="Description" />
+        </div>
+        <div class="item" id="i3">Bhel-puri
+            <img src="chur.jfif" alt="Description" />
+        </div>
+        <div class="item" id="i4">Chole Bhature
+            <img src="chole.jfif" alt="Description" />
+        </div>
+        <div class="item" id="i5">Chicken Biryani
+            <img src="chicken.jfif" alt="Description" />
+        </div>
+        <div class="item" id="i6">Veg Biryani
+            <img src="briyani.jfif" alt="Description" />
+        </div>
+        <div class="item" id="i7">Dosa
+            <img src="dhosa.jfif" alt="Description" />
+        </div>
+
+
+    </div>
+</body>
+</html>

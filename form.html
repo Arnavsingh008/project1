@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="">   <!-- in action the location for php-->
+        <label for="uname">Enter Name:</label>
+        <input type="text" name="name" id="uname" size="40" maxlength="5" placeholder="Enter your first name" value="Mr." required >
+        <br>
+        <br>
+        <label for="pass">Enter your Password:</label>
+        <input type="password" name="pass" id="'pass" placeholder="Enter password" maxlength="8" required >
+        <br>
+        <br>
+        <label for="email">Enter your email:</label> <!-- emailtype is used rather than in text because email type will insure that email consist of @ and .-->
+        <input type="email" name="'email" id="email" placeholder="enter email" required>
+        <br>  <!-- 3000 character in url max-->
+        <br>
+        <label for="feedback">Enter feedback</label><br>
+        <textarea name="feedback" id="feedback" rows="7" cols="25">Enter feedback</textarea>
+        <br>
+        <label for="checkbox">Favourite fruit:</label>
+        <input type="checkbox" name="checkbox" id="checkbox" value="mang">Mango
+        <input type="checkbox" name="checkbox" id="checkbox" value="appl">Apple   <!--value name will show in url i.e backend-->
+        <input type="checkbox" name="checkbox" id="ban" value="bana"><label for="ban">Banana</label>
+        <input type="checkbox" name="checkbox" id="checkbox" value="litch" checked>Litchi
+        <br><br>
+        <label for="gen">Gender:</label>
+        <input type="radio" name="gen" id="gen" value="maleeee"><label for="gen">Male</label> <!--lable is used to make the text clickable-->
+        <input type="radio" name="gen" id="fe" value="feeema"><label for="fe">Female</label>
+        <br><br>
+        <label for="ggg">Hobby:</label>
+        <input type="radio" name="ggg" id="ggg" value="dance"><label for="ggg">Dancing</label> <!--lable is used to make the text clickable-->
+        <input type="radio" name="ggg" id="gt" value="sing"><label for="gt">Singing</label>  <!--unique id have to give in id & for-->
+        <br><br>
+        <label for="stateselect">Select State:</label>
+        <select name="stateselect" id="stateselect" size="3" multiple>
+            <option value="state">Choose your state</option>
+            <option value="Pun" selected>Punjab</option>   <!--selected is used for predefine-->
+            <option value="biha">Bihar</option>
+            <option value="jhar">Jharkhand</option>
+            <option value="del">Delhi</option>
+            <option value="raj">Rajasthan</option>
+        </select>
+        <br><br>
+        <input type="submit" name="'submitform" id="submitform" value="Submit">
+        <br>
+
+        <input type="reset" name="'reset" id="reset" value="Reset">
+        <br><br>
+        <input type="image" name="submit" id="sub" src="submit-button-icon-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-vector.jpg" width="90" height="40">
+    </form>
+</body>
+</html>
